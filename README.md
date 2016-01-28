@@ -17,16 +17,16 @@ needs.
 
 *Wrong*
 
-![version 1.0][logo]
+[logo1]
 
-[logo]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/wrong.png?raw=true "Version 1.0"
+[logo1]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/wrong.png?raw=true
 
 
 *Right*
 
-![version 1.0][logo]
+[logo2]
 
-[logo]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/right.png?raw=true "Version 1.0"
+[logo2]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/right.png?raw=true
 
 [**Ready to go JSFiddle sample**](https://jsfiddle.net/AlexanderKozhevin/ffcgv6om/)
 
@@ -40,10 +40,16 @@ app.directive("rowWrapFill", function($compile){
     restrict: "A",
   	scope: {},
     link: function(scope, elm, attrs){
+
 			if (scope.$parent.$last){
+
+
+        //Basic data to calculate things
         parent_width = elm[0].parentNode.clientWidth;
 				child_width = elm[0].clientWidth;
 				length = scope.$parent.$index + 1;
+
+
         if (length>0){
         	var theStyle = window.getComputedStyle(elm[0], null);
 
@@ -65,19 +71,12 @@ app.directive("rowWrapFill", function($compile){
             for (var i=0; i<to_add; i++){
               blank_node = '<div style="width: ' + child_width + 'px;box-sizing: border-box;"></div>';
 
-
               node = $compile(blank_node)(scope)
               elm.parent().append(node)
+            }
           }
-
-
-          }
-
         }
       }
-
-
-
     }
   }
 })
