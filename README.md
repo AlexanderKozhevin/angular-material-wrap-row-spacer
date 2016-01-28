@@ -19,14 +19,14 @@ needs.
 
 ![version 1.0][logo]
 
-[logo]: https://github.com/AlexanderKozhevin/betterMe/blob/master/wrong.png?raw=true "Version 1.0"
+[logo]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/wrong.png?raw=true "Version 1.0"
 
 
 *Right*
 
 ![version 1.0][logo]
 
-[logo]: https://github.com/AlexanderKozhevin/betterMe/blob/master/right.png?raw=true "Version 1.0"
+[logo]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/right.png?raw=true "Version 1.0"
 
 [**Ready to go JSFiddle sample**](https://jsfiddle.net/AlexanderKozhevin/ffcgv6om/)
 
