@@ -44,7 +44,7 @@ app.directive("rowWrapFill", function($compile){
   	scope: {},
     link: function(scope, elm, attrs){
 
-			if (scope.$parent.$last){
+      if (scope.$parent.$last){
 
 
         //Basic data to calculate things
