@@ -1,19 +1,18 @@
 # angular-material-wrap-row-space-hack
 
 [Angular - Material](https://material.angularjs.org/) uses a flex-box. There are a number of options to
-align element. So you can align elements as a **row** and add **layout-wrap** so  elements fill few rows.
+align elements. You can align elements as a **row** and add **layout-wrap** so that  elements fill few rows.
 
-As also we can add **layout-align** property - which can have  *'start', 'center', 'end', 'space-around', 'space-between'*.
+As also you can add **layout-align** property - which can have  *'start', 'center', 'end', 'space-around', 'space-between'* values.
+
 
 And there is a little ugly thing when you use **layout-wrap** and **space-between/around** together.
 If the last row doesn't have the same number of elements as the previous one, it will align
-element differently.
+elements differently.
 
-So I suggest to add empty node elements to fix this problem.
-This solutions is not really universal. Because you can use different types of elements, which probably
-can have required children elements. But still it is a bugfix and you can easily modify it for your
-needs.
 
+Solution - just add invisible element to the last row.
+The directive below defines parent box size and calculate how much empty nodes it needs to add. 
 
 *Wrong*
 
