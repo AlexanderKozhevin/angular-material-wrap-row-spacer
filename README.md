@@ -17,16 +17,19 @@ needs.
 
 *Wrong*
 
-[logo1]
 
-[logo1]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/wrong.png?raw=true
+![version 1.0][logo1]
+
+[logo1]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/wrong.png?raw=true "Version 1.0"
 
 
 *Right*
 
-[logo2]
+![version 1.0][logo2]
 
-[logo2]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/right.png?raw=true
+[logo2]: https://github.com/AlexanderKozhevin/angular-material-wrap-row-spacer/blob/master/right.png?raw=true "Version 1.0"
+
+
 
 [**Ready to go JSFiddle sample**](https://jsfiddle.net/AlexanderKozhevin/ffcgv6om/)
 
@@ -34,7 +37,7 @@ needs.
 
 *Solution*
 
-```
+```javascript
 app.directive("rowWrapFill", function($compile){
 	return {
     restrict: "A",
