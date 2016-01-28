@@ -5,7 +5,7 @@ align element. So you can align elements as a **row** and add **layout-wrap** so
 
 As also we can add **layout-align** property - which can have  *'start', 'center', 'end', 'space-around', 'space-between'*.
 
-And there is a little ugly thing when you use *layout-wrap* and *space-between/around* together.
+And there is a little ugly thing when you use **layout-wrap** and **space-between/around** together.
 If the last row doesn't have the same number of elements as the previous one, it will align
 element differently.
 
